@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker.sabio.de/spring-nomad-cluster:6.10.0-SNAPSHOT
+    image: docker.registry/spring-nomad-cluster:6.10.0-SNAPSHOT
     networks:
       - my-network
 networks:

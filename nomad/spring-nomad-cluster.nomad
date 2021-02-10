@@ -1,5 +1,5 @@
 job "milad-nomad-cluster" {
-    datacenters = ["fsn"]
+    datacenters = ["dc"]
 
     type = "service"
 
