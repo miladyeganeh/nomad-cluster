@@ -1,0 +1,14 @@
+version: '2.3'
+
+services:
+  spring-service:
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker.sabio.de/spring-nomad-cluster:6.10.0-SNAPSHOT
+    networks:
+      - my-network
+networks:
+  my-network:

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: public-content-service
+server:
+  port: 9090
+es:
+  node:
+    name: ${ELASTICSEARCH_CLUSTER_NODES:localhost:9292}
